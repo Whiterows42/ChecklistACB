@@ -132,13 +132,13 @@ const checklistRef = useRef(null);
         <tbody>
           { InspectionForm && InspectionForm.length > 0 && InspectionForm.map((item, index) => (
             <tr key={index} className="">
-              <td className="font-bold p-2 text-center">{index + 1}</td>
-              <td className=" py-2 text-left">{item.checkpoint}</td>
-              <td className="border-2 border-black border-r-0 border-l-1 border-b-0 border-t-0 p-2 text-center"><input type="checkbox" checked={item.beforeServiceNotOk} readOnly /></td>
-              <td className="border-2 border-black border-r-1 border-l-0 border-b-0 border-t-0 p-2 text-center"><input type="checkbox" checked={item.beforeServiceOk} readOnly /></td>
-              <td className=" p-2 text-center"><input type="checkbox" checked={item.afterServiceNotOk} readOnly /></td>
-              <td className="border-2 border-black border-r-1 border-l-0 border-b-0 border-t-0 p-2 text-center"><input type="checkbox" checked={item.afterServiceOk} readOnly  /></td>
-              <td className=" p-2"> <p>{item.remarks || '_______________'}</p> </td>
+              <td className="font-bold px-2 text-center">{index + 1}</td>
+              <td className=" px-2 text-left">{item.checkpoint}</td>
+              <td className="border-2 border-black border-r-0 border-l-1 border-b-0 border-t-0 px-2 text-center"><input type="checkbox" checked={item.beforeServiceNotOk} readOnly /></td>
+              <td className="border-2 border-black border-r-1 border-l-0 border-b-0 border-t-0 px-2 text-center"><input type="checkbox" checked={item.beforeServiceOk} readOnly /></td>
+              <td className=" px-2 text-center"><input type="checkbox" checked={item.afterServiceNotOk} readOnly /></td>
+              <td className="border-2 border-black border-r-1 border-l-0 border-b-0 border-t-0 px-2 text-center"><input type="checkbox" checked={item.afterServiceOk} readOnly  /></td>
+              <td className=" px-2"> <p>{item.remarks || '_______________'}</p> </td>
             </tr>
           ))}
         </tbody>
